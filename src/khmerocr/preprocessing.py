@@ -23,4 +23,3 @@ def crop_image(image, points=(), kernal_size=(32, 32)):
         x, y, w, h = points
         cropped_image = image[y:y+h, x:x+w]
         return cropped_image
-    
