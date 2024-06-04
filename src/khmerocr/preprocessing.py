@@ -9,7 +9,7 @@ def read_image(path: str,):
 
 def crop_image(image, points=(), kernal_size=(32, 32)):
     if not points:
-        cropped_image = np.empty()
+        cropped_image = []
         gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         ret, thresh1_image = cv2.threshold(gray_image, 0, 255, cv2.THRESH_OTSU | cv2.THRESH_BINARY_INV)
         rect_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, kernal_size)
