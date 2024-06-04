@@ -1,9 +1,11 @@
 import cv2
 import numpy as np
 
+
 def read_image(path: str,):
     image = cv2.imread(path)
     return image
+
 
 def crop_image(image, points=(), kernal_size=(32, 32)):
     if not points:
