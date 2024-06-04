@@ -1,9 +1,5 @@
-import os
 import cv2
-import shutil
 import numpy as np
-import json
-import matplotlib.pyplot as plt
 
 def read_image(path: str,):
     image = cv2.imread(path)
